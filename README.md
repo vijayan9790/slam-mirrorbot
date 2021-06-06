@@ -28,10 +28,11 @@
 - Counting file/folder
 - Shell and Executor
 - Stickers module
+- View Link button (Not all Index support, recommended using [Bhadoo Index](https://github.com/ParveenBhadooOfficial/Google-Drive-Index))
 - Direct links supported:
 ```
-Racaty, Hxfile, Anonfiles,
-Fembed (femax20 & layarkacaxxi), Onedrive (Only works for file not folder)
+Racaty, Hxfile, Anonfiles, Femax20, Layarkacaxxi,
+Onedrive (Only works for file not folder and busines)
 ```
 ## From Original Repos
 - Mirroring direct download links, Torrent, and Telegram files to Google Drive
@@ -130,7 +131,7 @@ Fill up rest of the fields. Meaning of each fields are discussed below:
 - **AUTHORIZED_CHATS**: Fill user_id and chat_id of you want to authorize.
 - **IS_TEAM_DRIVE**: (Optional field) Set to `True` if `GDRIVE_FOLDER_ID` is from a Team Drive else `False` or Leave it empty.
 - **USE_SERVICE_ACCOUNTS**: (Optional field) (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using service accounts](https://github.com/breakdowns/slam-mirrorbot#generate-service-accounts-what-is-service-account) section below.
-- **INDEX_URL**: (Optional field) Refer to https://github.com/maple3142/GDIndex/ The URL should not have any trailing '/'
+- **INDEX_URL**: (Optional field) Refer to https://github.com/ParveenBhadooOfficial/Google-Drive-Index The URL should not have any trailing '/'
 - **MEGA_API_KEY**: Mega.nz api key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
 - **MEGA_EMAIL_ID**: Your email id you used to sign up on mega.nz for using premium accounts (Leave th)
 - **MEGA_PASSWORD**: Your password for your mega.nz account
@@ -153,13 +154,13 @@ Above are the supported url Shorteners. Except these only some url Shorteners ar
 
 **Note**: You can limit maximum concurrent downloads by changing the value of **MAX_CONCURRENT_DOWNLOADS** in aria.sh. By default, it's set to `7`.
 ### Add more buttons (Optional)
-Two buttons are already added of Drive Link and Index Link, you can add extra buttons, these are optional, if you don't know what are below entries, simply leave them, don't fill anything in them.
-- **BUTTON_THREE_NAME**:
-- **BUTTON_THREE_URL**:
+Three buttons are already added of Drive Link, Index Link, and View Link, you can add extra buttons, these are optional, if you don't know what are below entries, simply leave them, don't fill anything in them.
 - **BUTTON_FOUR_NAME**:
 - **BUTTON_FOUR_URL**:
 - **BUTTON_FIVE_NAME**:
 - **BUTTON_FIVE_URL**:
+- **BUTTON_SIX_NAME**:
+- **BUTTON_SIX_URL**:
 
 </details>
 
@@ -283,7 +284,7 @@ Where host is the name of extractor (eg. Youtube, Twitch). Multiple accounts of 
 # Credits
 
 Thanks to:
-- [out386](https://github.com/out386) heavily inspired from telegram bot which is written in JS
+- [out386](https://github.com/out386) heavily inspired from Telegram Bot which is written in JS
 - [Izzy12](https://github.com/lzzy12/) for original repo
 - [Dank-del](https://github.com/Dank-del/) for base repo
 - [magneto261290](https://github.com/magneto261290/) for some features
